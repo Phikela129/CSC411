@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>University Booking Reservation System</title>
+</head>
+<body>
+  <h1>Welcome to the University Booking Reservation System</h1>
+  <form id="bookingForm">
+    <label for="studentName">Student Name:</label>
+    <input type="text" id="studentName"><br><br>
+    <label for="date">Date:</label>
+    <input type="date" id="date"><br><br>
+    <label for="time">Time:</label>
+    <input type="time" id="time"><br><br>
+    <button type="submit">Book Slot</button>
+  </form>
+
+  <script>
+    const bookingForm = document.getElementById('bookingForm');
+
+    bookingForm.addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      const studentName = document.getElementById('studentName').value;
+      const date = document.getElementById('date').value;
+      const time = document.getElementById('time').value;
+
+      const bookingData = {
+        studentName,
+        date,
+        time
+      };
+
+      // You can connect to a database here to store the bookingData
+
+      const response = await fetch('http://localhost:3000/bookings', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(bookingData)
+      });
+
+      const bookingResult = await response.json();
+      console.log(bookingResult);
+    });
+  </script>
+</body>
+</html>
+
