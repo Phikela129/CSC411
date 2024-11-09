@@ -1,0 +1,1 @@
+This is a source code for implementing a University Campus Booking system, which allows student to book a room in the institude by simpling login on the system using his/her details.After login the user is shown available rooms based on gender and other factors like which semester the student is enrolled in.Then he/she can book the vacant room by simply clicking on it.
