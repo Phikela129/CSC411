@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>Employer Registration form</title>
+    
+    <style>
+      html, body {
+      min-height: 100%;
+      }
+      body, div, form, input, select, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 16px;
+      color: #eee;
+      }
+      body {
+     
+      background-size: cover;
+      }
+      h1, h2 {
+      text-transform: uppercase;
+      font-weight: 400;
+      }
+      h2 {
+	margin: 0 0 0 8px;
+	color: #0066FF;
+}
+      .main-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding: 25px;
+      background: rgba(0, 0, 0, 0.5); 
+      }
+      .left-part, form {
+      padding: 25px;
+      }
+      .left-part {
+      text-align: center;
+      }
+      .fa-graduation-cap {
+      font-size: 72px;
+      }
+      form {
+      background: rgba(0, 0, 0, 0.7); 
+      }
+      .title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      }
+      .info {
+      display: flex;
+      flex-direction: column;
+      }
+      input, select {
+      padding: 5px;
+      margin-bottom: 30px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #eee;
+      }
+      input::placeholder {
+      color: #eee;
+      }
+      option:focus {
+      border: none;
+      }
+      option {
+      background: black; 
+      border: none;
+      }
+      .checkbox input {
+      margin: 0 10px 0 0;
+      vertical-align: middle;
+      }
+      .checkbox a {
+      color: #26a9e0;
+      }
+      .checkbox a:hover {
+      color: #85d6de;
+      }
+      .btn-item, button {
+      padding: 10px 5px;
+      margin-top: 20px;
+      border-radius: 5px; 
+      border: none;
+      background: #26a9e0; 
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 400;
+      color: #fff;
+      }
+      .btn-item {
+      display: inline-block;
+      margin: 20px 5px 0;
+      }
+      button {
+      width: 100%;
+      }
+      button:hover, .btn-item:hover {
+      background: #85d6de;
+      }
+      @media (min-width: 568px) {
+      html, body {
+      height: 100%;
+      }
+      .main-block {
+      flex-direction: row;
+      height: calc(100% - 50px);
+      }
+      .left-part, form {
+      flex: 1;
+      height: auto;
+      }
+      }
+    .auto-style1 {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		height: calc(100% - 50px);
+		text-align: center;
+		padding: 25px;
+		background: wheat;
+	}
+    .auto-style2 {
+	color: #26A9E0;
+}
+    .auto-style4 {
+		color: #F5DEB3;
+	}
+	.auto-style5 {
+		color: #FFFFFF;
+		text-align: left;
+	}
+    </style>
+  </head>
+  <body>
+    <div class="auto-style1">
+      <form action="employer.php" method="post">
+        <div class="title">
+          <i class="fas fa-pencil-alt"></i> 
+          <h2 class="auto-style2">Register here</h2>
+        </div>
+        <div class="info">
+          <input class="comp" type="text" name="COMPANY_NAME" placeholder="COMPANY NAME" required="">
+          <input type="text" name="DATE" placeholder="DATE (YYYY-MM-DD)" required="">
+          <input type="text" name="LOCATION" placeholder="LOCATION" required="">
+          <input type="text" name="APPLICATION_LINK" placeholder="APPLICATION LINK" required="">
+          <select name="DEPARTMENT">
+            <option value="DEPARTMENT" selected>DEPARTMENT</option>
+            <option value="Agriculture">Agriculture</option>
+            <option value="Humanities">Humanities</option>
+            <option value="Education">Education</option>
+            <option value="Science And Engineering">Science And Engineering</option>
+            <option value="Commerce">Commerce</option>
+            <option value="Consumer Science">Consumer Science</option>
+            <option value="Social Science">Social Science</option>
+            <option value="Health science">Health Science</option>
+          </select>
+          <input type="text" name="PROGRAM" placeholder="PROGRAM" required="">
+        </div>
+        <button type="submit" href="/">SUBMIT</button>
+        <h2 class="auto-style2">&nbsp;</h2>
+		  <h3 class="auto-style5"><a href="internship.html">
+		  <span class="auto-style4">RETURN HOME</span></a></h3>
+      </form>
+    </div>
+  </body>
+</html>

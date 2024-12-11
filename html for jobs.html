@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang='en' class=''>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name="viewport"content="width=device-width.inital-scale=1" />
+    <meta name="title" content="Internship for University Students"/>
+    <meta name="desciption" content="Allows students to easily navigate different companies or organizations that offers internship to students who are enrolling in universities or colleges"/>
+
+    <title>Employer</title>
+           <style type="text/css">
+		   @import url('style.css');
+		   .auto-style2 {
+	margin-top: 48px;
+}
+		   .auto-style3 {
+			   margin-top: 0px;
+	margin-left: 0px;
+}
+		   .auto-style4 {
+			   text-align: center;
+		   }
+		   </style>
+           </head>
+  <body>
+    <div class="auto-style4">
+    <div class="topnav">
+  	  <a href="INTERNSHIP.html" name="home to return" style="width: 159px; height: 22px">HOME</a>
+      <a href="html%20for%20menu.html" style="width: 159px; height: 22px">  INTERNS</a>
+      <a class="active" href="html%20for%20jobs.html" style="width: 159px; height: 22px">EMPLOYER</a>
+		  <a href="html%20for%20contact.html" style="width: 159px; height: 22px">CONTACT</a>
+		  <a href="html%20for%20about.html" style="width: 159px; height: 22px">ABOUT</a>
+    </div>
+    <script>
+      const f = document.getElementById('form');
+      const q = document.getElementById('query');
+      
+
+      function submitted(event) {
+        event.preventDefault();
+        
+        const win = window.open(url, '_blank');
+        win.focus();
+      }
+
+      f.addEventListener('submit', submitted);
+    </script>
+    <p class="auto-style2" style="height: 50px"><a href="registration.html">please click here to submit a registration 
+	for available interns...</a></p>
+    <form action="search.php" role="search" id="form" method="post" class="auto-style11" style="width: 55px">
+    
+       <button name="search"><a href="search.php" target='blank'>
+        <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+        </a>
+      </button>
+    	<br>
+    </form>
+   
+	<main>
+	<img alt="Internship" class="auto-style3" src="pexels-fauxels-3184465.jpg" width="531" height="365">
+	</main>
+    </div>
+    </body>
+</html>
