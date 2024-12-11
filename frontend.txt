@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+  <meta charset=”UTF-8”>
+  <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+  <title>Google Login</title>
+  <script src=https://accounts.google.com/gsi/client async defer></script>
+</head>
+<body>
+  <div id=”g_id_onload”
+       Data-client_id=”YOUR_CLIENT_ID”
+       Data-context=”signin”
+       Data-ux_mode=”popup”
+       Data-login_uri=https://your-backend.com/google-login
+       Data-auto_prompt=”false”>
+  </div>
+
+  <div class=”g_id_signin”
+       Data-type=”standard”
+       Data-shape=”rectangular”
+       Data-theme=”outline”
+       Data-text=”sign_in_with”
+       Data-size=”large”>
+  </div>
+</body>
+</html>
+
